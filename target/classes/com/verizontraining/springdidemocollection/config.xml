@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.verizontraining.springdidemocollection.Country"
+		name="country">
+		<property name="name">
+			<value>India</value>
+		</property>
+		<property name="languages">
+			<set>
+				<value>Hindi</value>
+				<value>Telugu</value>
+				<value>Tamil</value>
+				<value>Tamil</value>
+			</set>
+		</property>
+	</bean>
+
+	<bean
+		class="com.verizontraining.springdidemocollection.StateLanguages"
+		name="stateLang">
+		<property name="stateLanguages">
+			<map>
+				<entry key="Tamil Nadu" value="Tamil"></entry>
+				<entry key="Telengana" value="Telugu"></entry>
+			</map>
+		</property>
+	</bean>
+
+
+</beans>
